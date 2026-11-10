@@ -8,7 +8,7 @@ if curl -fsS http://127.0.0.1:1880/ >/dev/null 2>&1; then
 fi
 
 echo "Spustam Node-RED..."
-nohup node-red > "$LOG" 2>&1 < /dev/null &
+nohup node-red --userDir "$PWD/.node-red" flows.json > "$LOG" 2>&1 < /dev/null &
 
 for i in $(seq 1 30); do
     if curl -fsS http://127.0.0.1:1880/ >/dev/null 2>&1; then

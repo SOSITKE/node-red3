@@ -1,0 +1,15 @@
+# Node-RED - ignorovat citlive a pomocne subory
+.node-red/*
+!.node-red/
+!.node-red/flows.json
+
+# Pristupove udaje a konfiguracia
+.env
+.env.*
+*.credentials.json
+
+# Zavisnosti
+node_modules/
+
+# Zaznamy
+*.log
