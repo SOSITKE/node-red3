@@ -10,5 +10,5 @@
     }
   },
   "postCreateCommand": "npm install -g node-red && mkdir -p ~/.node-red && cd ~/.node-red && npm install @flowfuse/node-red-dashboard",
-  "postStartCommand": "nohup node-red > /tmp/node-red.log 2>&1 < /dev/null &"
+  "postStartCommand": "bash .devcontainer/start-node-red.sh"
 }
