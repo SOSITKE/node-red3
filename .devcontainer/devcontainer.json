@@ -9,7 +9,7 @@
       "visibility": "private"
     }
   },
-  "postCreateCommand": "npm install -g node-red && mkdir -p ~/.node-red && cd ~/.node-red && npm install @flowfuse/node-red-dashboard",
+  "postCreateCommand": "npm install -g node-red && mkdir -p .node-red && cd .node-red && npm install @flowfuse/node-red-dashboard",
   "postStartCommand": "bash .devcontainer/start-node-red.sh",
   "postAttachCommand": "bash .devcontainer/start-node-red.sh"
 }
